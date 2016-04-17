@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+.ten {
+	height:1000px;
+	background: #6296db url("../img/bg_blue.png") no-repeat;
+	background-size: 100%;
+}
+
+body {
+	font-family: 'Noto Sans Japanese', serif;
+	min-width: 700px;
+	color: #666666;
+}
+
+header {
+	height: 67px;
+	background-color: #333333;
+	color: white;
+
+	h1 {
+		margin-top: 5px;
+		float: left;
+		display:inline;
+		margin:0;
+	}
+	nav#menu {
+		float: left;
+		ul {
+			li {
+				height: 65px;
+				width: 65px;
+				text-align:center;
+				float: left;
+				list-style-type: none;
+				border: 1px solid;
+				span#headerIcon {
+					font-size: 35px;
+				}
+				span#font {
+					font-size: 8px;
+				}
+			}
+			li:hover{
+				color: #A4D532;
+				background-color: white;
+			}
+			li:hover > #font{
+				color: black;
+			}
+		}
+	}
+	nav#lang {
+		float: right;
+		margin-right: 30px;
+		margin-top: 15px;
+	}
+}
+
+
+section.two {
+	height: 45px;
+	background-color: #DDDDDD;
+	text-align:center;
+	line-height: 45px;
+	ul {
+		padding: 0px;
+		margin: 0px;
+		li {
+			list-style: none;
+			float: left;
+			height: 43px;
+			width: 130px;
+		}
+		li#sikaku1 {
+			color: white;
+			background-color: #A4D532;
+			border-color: white;
+		}
+		li#sikaku2 {
+			height: 43px;
+			width: 130px;
+			background-color: white;
+			border-color: white;
+		}
+		li#sikaku2:before {
+			content: "" ;
+			float: left;
+			border-top: 20px solid transparent;
+			border-bottom: 23px solid transparent;
+			border-left: 15px solid #A4D532;
+			background-color: white;
+		}
+		span#sankaku {
+			float: left;
+			border-top: 20px solid transparent;
+			border-bottom: 23px solid transparent;
+			border-left: 15px solid white;
+		}
+	}
+}
+
+section.three {
+	text-align:center;
+	height: 300px;
+	h3 {
+		height: 45px;
+		background-color: #A4D532;
+		font-size: 17px;
+		line-height: 45px;
+		color: white;
+		margin-top: 0px;
+	}
+	div.searchTriangle {
+	  height: 30px;
+	  display: inline;
+
+	  span {
+	    border-top: 10px solid #A4D532;
+	    border-left: 14px solid transparent;
+	    border-right: 14px solid transparent;
+	    background-color: white;
+	  }
+	}
+
+    div.threeSearch {
+		width: 250px;
+		margin: 0 auto;
+		background-color: red;
+		ul {
+			margin:0px;
+			padding: 0px;
+			li{
+				height: 100px;
+				width: 100px;
+				text-align:center;
+				float: left;
+				list-style-type: none;
+				cursor:pointer;
+				span#threeCircle {
+					height: 100px;
+					width: 100px;
+					float: left;
+					border-radius: 50%;
+					background-color: #A4D532;
+				}
+			}
+			li:last-child {
+					margin-left: 50px;
+			}
+		}
+	}
+}
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
+
+#myModal {
+	.modal-content {
+		width:700px;
+	}
+	h4 {
+		text-align: center;
+	}
+	input {
+		width: 185px;
+		height: 40px;
+		margin-bottom: 10px;
+		border: 1px #cccccc solid;
+	}
+	div#modalbody2 {
+		border-top: 2px white solid;
+		padding-top: 20px;
+	}
+	div#modal1 input {
+ 		margin-left: 20px;
+ 		margin-right: 20px;
+ 	}
+	div#modal1 input:first-child {
+		margin-left: 0px;
+	}
+	div#modal2 input:nth-child(2) {
+		margin-left: 53.4px;
+	}
+	div#modal2 input:last-child {
+		float: right;
+	}
+	div.modal-body button {
+		width: 100%;
+		height: 40px;
+		background-color: #A4D532;
+		color: white;
+		border-style: none;
+	}
+	div.modal-body {
+		background-color: #EEEEEE;
+	}
+}
+
+#myModal2 {
+	.modal-content {
+		width:700px;
+	}
+	h4 {
+		text-align: center;
+	}
+	.check-group input {
+	    display: none;
+	}
+
+	.check-group label {
+		float: left;
+	    padding: 8px 25px;
+	    margin: 5px;
+	    border: solid 1px #aaa;
+	    color: #C0C0C0;
+	    background-color: white;
+
+	}
+	.check-group input:checked+label {
+		span {
+			color: #00B420;
+		}
+	    color: black;
+	    border-color: #00B300;
+
+	}
+	.check-group input:checked+label:before {
+	 	color: #00B300;
+
+	}
+	div.modal-body {
+		background-color: #EEEEEE;
+	}
+	div#Maker {
+		border-top: 2px white solid;
+		border-bottom: 2px #BBBBBB solid;
+	}
+	div.myModal2Footer {
+		background-color: white;
+		height: 80px;
+		button {
+			margin-top: 20px;
+			margin-left: 15px;
+			height: 40px;
+			width: 668px;
+			background-color: #A4D532;
+			color: white;
+			border-style: none;
+		}
+		button:disabled {
+        	border: solid 1px #aaa;
+        	background-color: white;
+        	color: #C0C0C0;
+		}
+	}
+}
+.modal {
+  position: fixed;
+  top: 200px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>検索</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link href="./css/bootstrap-toggle.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="one">
+      <h1>
+        <a href="./index.html">
+        </a>
+      </h1>
+      <nav id="menu">
+        <ul>
+            <li>
+              <span class="glyphicon glyphicon-user" aria-hidden="true" id="headerIcon"></span>
+              <br><span id="font">メニュー</span>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-road" aria-hidden="true" id="headerIcon"></span>
+              <br><span id="font">一覧</span>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-stats" aria-hidden="true" id="headerIcon"></span>
+              <br><span id="font">データ</span>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-comment" aria-hidden="true" id="headerIcon"></span>
+              <br><span id="font">ご案内</span>
+            </li>
+        </ul>
+      </nav>
+      <nav id="lang">
+        <div>
+          JP
+          <span id="langbutton">
+              <input type="checkbox" data-toggle="toggle" data-style="ios" data-on="English" data-off="日本語">
+          </span>
+          EN
+        </div>
+      </nav>
+    </header>
+    <section class="two">
+      <ul>
+          <li id="sikaku1">ホーム</li>
+          <li id="sikaku2">検索</li>
+          <span id="sankaku"></span>
+      </ul>
+    </section>
+
+    <section class="three">
+      <h3><span class="glyphicon glyphicon-search"></span>検索方法を選択</h3>
+      <div class="searchTriangle"><span></span></div>
+      <div class="threeSearch">
+          <ul>
+            <li>
+              <span id="threeCircle"></span>
+              <br>条件で検索
+            </li>
+            <li data-toggle="modal" data-target="#myModal">
+              <span id="threeCircle"></span>
+              <br>指定条件で検索
+            </li>
+          </ul>
+      </div>
+    </section>
+    <section class="ten"></section>
+
+
+<!-- 出品番号で検索モーダル -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">出品番号で検索</h4>
+      </div>
+      <div class="modal-body">
+        <div>
+          <p>出品番号の範囲で探す</p>
+          <div id="modal1">
+            <input type="text" name="name" size="13">から<input type="text" name="name" size="13">まで
+          </div>
+          <button type="button">出品番号の範囲で検索する</button>
+        </div>
+        <br>
+        <div id="modalbody2">
+            <p>出品番号の範囲で探す</p>
+              <div id="modal2">
+                <input type="text" name="name" size="13"><input type="text" name="name" size="13"><input type="text" name="name" size="13">
+              </div>
+              <div id="modal2">
+                <input type="text" name="name" size="13"><input type="text" name="name" size="13"><input type="text" name="name" size="13">
+              </div>
+              <button type="button">特定の出品番号で検索する</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+  <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap-toggle.min.js"></script>
+  <script src="./js/index.js"></script>
+</html>
